@@ -4,115 +4,270 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GreatSurf.io — AI-Powered Marketing for Newport Beach SMBs</title>
-  <meta name="description" content="GreatSurf.io is a Newport Beach marketing agency that uses AI + automation to drive more leads for high‑CLV local businesses through Social Media Marketing, Ad Management on Google/Meta, and Local SEO." />
+  <meta name="description" content="GreatSurf.io is a Newport Beach marketing agency that uses AI + automation to drive more leads for high-CLV local businesses. Pool builders, landscape architects, remodelers, and more." />
+  <meta name="keywords" content="Newport Beach marketing agency, Orange County marketing, AI marketing, lead generation, local SEO, PPC, automation" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="GreatSurf.io — AI-Powered Marketing for Newport Beach SMBs" />
+  <meta property="og:description" content="AI + automation to deliver measurable leads for high-CLV local services in Newport Beach & Newport Coast." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://greatsurf.io/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop" />
 
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%230099ff' d='M4 40c18-22 38-26 56-8-8 2-18 2-28 12-6 6-12 8-16 8-6 0-10-4-12-12z'/%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* Palette: sea blue pastel, sand, forest green */
     :root{
-      --sea:#7ECBE6;           /* sea blue pastel */
-      --sand:#F5E6C8;          /* sand */
-      --forest:#1F6F50;        /* forest green */
-      --paper:#ffffff;
-      --ink:#0e1726;
-      --muted:#667085;
-      --card:#ffffff;
-      --card-ink:#0e1726;
-      --ring:rgba(126,203,230,.35);
-      --border:#e5e7eb;
-      --shadow:0 1px 2px rgba(16,24,40,.06);
+      --bg:#0b1220; --ink:#101828; --muted:#667085; --brand:#0ea5e9; --brand-deep:#0284c7; --paper:#ffffff;
+      --card:#0f172a; --card-ink:#e2e8f0; --accent:#e2f3ff; --ring:rgba(14,165,233,.35);
     }
-    @media (prefers-color-scheme: dark){
-      :root{
-        --paper:#0c1220;
-        --ink:#e6edf6;
-        --muted:#9AA4B2;
-        --card:#0f172a;
-        --card-ink:#E2E8F0;
-        --border:#1f2a3a;
-        --shadow:0 1px 2px rgba(0,0,0,.25);
-      }
-    }
-    body.dark{
-      --paper:#0c1220;
-      --ink:#e6edf6;
-      --muted:#9AA4B2;
-      --card:#0f172a;
-      --card-ink:#E2E8F0;
-      --border:#1f2a3a;
-      --shadow:0 1px 2px rgba(0,0,0,.25);
-    }
-
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--paper);color:var(--ink)}
-    a{color:var(--forest);text-decoration:none}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#0b1220}
+    a{color:var(--brand);text-decoration:none}
     a:hover{text-decoration:underline}
     .container{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;z-index:40;background:var(--paper);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--border)}
-    body.dark header{background:rgba(12,18,32,.7)}
+    header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.75);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid #eef2f7}
     .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{display:flex;gap:.6rem;align-items:center;font-weight:800}
-    .brand-logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--forest),var(--sea))}
-    .nav-links a{margin-left:18px;color:var(--ink);font-weight:600}
-    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--forest);border:1px solid rgba(0,0,0,.08);color:#fff;padding:12px 16px;border-radius:12px;font-weight:700;box-shadow:var(--shadow)}
-    .btn.secondary{background:transparent;border-color:var(--sea);color:var(--ink);background-image:linear-gradient(0deg, rgba(245,230,200,.6), rgba(245,230,200,.6))}
+    .brand{display:flex;gap:.6rem;align-items:center;font-weight:700}
+    .brand-logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),#66d9ff)}
+    .nav-links a{margin-left:18px;color:#0b1220;font-weight:600}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate;background:linear-gradient(180deg, rgba(2,6,23,1) 0%, rgba(2,6,23,.9) 40%, rgba(2,6,23,.85) 100%), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat; color:#eef6ff}
+    .hero .wrap{display:grid;grid-template-columns:1.1fr;gap:24px;padding:96px 0 72px}
+    .hero h1{font-size:40px;line-height:1.1;margin:0}
+    .hero p{color:#cde9ff;font-size:18px;max-width:720px}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 6px}
+    .badge{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#dff3ff;padding:6px 10px;border-radius:999px;font-size:12px}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--brand);border:1px solid var(--brand-deep);color:white;padding:12px 16px;border-radius:12px;font-weight:700}
+    .btn.secondary{background:transparent;border-color:#9bdcff;color:#e4f6ff}
     .btn:focus{outline:4px solid var(--ring);outline-offset:2px}
 
-    /* Dark mode toggle icon */
-    #theme-toggle i { font-size: 1.2rem; }
+    /* Sections */
+    section{padding:72px 0;border-top:1px solid #eef2f7}
+    h2.section-title{font-size:28px;margin:0 0 12px}
+    .muted{color:var(--muted)}
+
+    /* Services */
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .chip{display:inline-block;background:#eef8ff;border:1px solid #cbeaff;color:#095f8f;padding:4px 8px;border-radius:999px;font-size:12px;margin-right:6px}
+
+    /* Results */
+    .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .stat{background:linear-gradient(180deg,#ffffff, #f6fbff);border:1px solid #e6f3ff;border-radius:16px;padding:18px;text-align:center}
+    .stat .num{font-size:32px;font-weight:800;color:#0b86c0}
+    .stat .lbl{color:#475467}
+
+    /* Process */
+    .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .step{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:16px}
+    .step .n{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:999px;background:#e0f3ff;color:#086ea6;font-weight:800;margin-bottom:8px}
+
+    /* CTA band */
+    .cta-band{background:linear-gradient(135deg,#e0f7ff,#fff);border:1px solid #d8efff;border-radius:20px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+
+    /* Footer */
+    footer{background:#f8fafc;border-top:1px solid #eef2f7;padding:28px 0;color:#475467}
+
+    /* Responsive */
+    @media (max-width: 960px){
+      .grid.cols-3{grid-template-columns:1fr 1fr}
+      .stats{grid-template-columns:1fr 1fr 1fr}
+      .steps{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .hero .wrap{padding:80px 0 56px}
+      .hero h1{font-size:32px}
+      .grid.cols-3{grid-template-columns:1fr}
+      .stats{grid-template-columns:1fr 1fr}
+      .steps{grid-template-columns:1fr}
+      .cta{flex-direction:column;align-items:flex-start}
+    }
   </style>
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GreatSurf.io",
+    "url": "https://greatsurf.io/",
+    "logo": "https://greatsurf.io/logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/",
+      "https://www.instagram.com/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Newport Beach",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "hello@greatsurf.io"
+    }
+  }
+  </script>
 </head>
 <body>
   <header>
     <div class="container nav">
       <div class="brand">
         <div class="brand-logo" aria-hidden="true"></div>
-        <span>GreatSurf<span style="color:var(--forest)">.io</span></span>
+        <span>GreatSurf<span style="color:var(--brand)">.io</span></span>
       </div>
-      <div style="display:flex;align-items:center;gap:12px">
-        <button id="theme-toggle" class="btn secondary" aria-label="Toggle dark mode"><i class="fas fa-sun"></i></button>
-        <nav class="nav-links">
-          <a href="#services">Services</a>
-          <a href="#industries">Industries</a>
-          <a href="#results">Results</a>
-          <a href="#process">Process</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#results">Results</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- The rest of the content remains unchanged -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <div class="badges">
+          <span class="badge">Newport Beach • Newport Coast</span>
+          <span class="badge">AI + Automation</span>
+          <span class="badge">Performance-Driven</span>
+        </div>
+        <h1>AI‑Powered Marketing for High‑Value Local Services</h1>
+        <p>
+          GreatSurf.io is a Newport Beach marketing agency focused on driving measurable leads for high‑CLV businesses. We combine targeted ads, local SEO, and automated follow‑ups so your crew stays busy with the right projects.
+        </p>
+        <div class="cta">
+          <a class="btn" href="https://calendly.com/your-calendly/intro" target="_blank" rel="noopener">Book a 15‑min Call</a>
+          <a class="btn secondary" href="#contact">Get a Free AI Audit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">Services built for ROI</h2>
+      <p class="muted">Everything you need to capture and close premium local leads — without extra busywork.</p>
+      <div class="grid cols-3" style="margin-top:18px">
+        <div class="card">
+          <h3>Local SEO & Google Business Profile</h3>
+          <p class="muted">Rank in Newport Beach & Newport Coast, earn reviews on autopilot, and show up when homeowners are ready.</p>
+          <span class="chip">Listings</span><span class="chip">Reviews</span><span class="chip">Maps</span>
+        </div>
+        <div class="card">
+          <h3>Paid Ads That Qualify</h3>
+          <p class="muted">Precision Google & Meta campaigns aimed at high‑value projects with clear call tracking and form attribution.</p>
+          <span class="chip">PPC</span><span class="chip">Retargeting</span><span class="chip">Call Tracking</span>
+        </div>
+        <div class="card">
+          <h3>Automation & Lead Nurture</h3>
+          <p class="muted">Instant SMS/email follow‑ups, reminders, and pipeline dashboards so no inquiry slips through.</p>
+          <span class="chip">CRM</span><span class="chip">Workflows</span><span class="chip">Dashboards</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="industries">
+    <div class="container">
+      <h2 class="section-title">Who we help</h2>
+      <p class="muted">High‑end home services in Orange County.</p>
+      <div class="grid cols-3" style="margin-top:18px">
+        <div class="card"><h3>Landscape Architects</h3><p class="muted">Attract design‑forward homeowners and estate managers.</p></div>
+        <div class="card"><h3>Pool Maintenance</h3><p class="muted">Grow premium weekly routes in Newport Coast.</p></div>
+        <div class="card"><h3>Gardening Services</h3><p class="muted">Win recurring clients with reputation + local SEO.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="results">
+    <div class="container">
+      <h2 class="section-title">Proven outcomes</h2>
+      <p class="muted">We measure what matters: qualified inquiries, booked consults, and signed projects.</p>
+      <div class="stats" style="margin-top:18px">
+        <div class="stat"><div class="num">+5–10x</div><div class="lbl">Increase in monthly inquiries</div></div>
+        <div class="stat"><div class="num">< 5 min</div><div class="lbl">Average lead response time</div></div>
+        <div class="stat"><div class="num">100%</div><div class="lbl">Transparent call + form tracking</div></div>
+      </div>
+      <div class="cta" style="margin-top:18px">
+        <a class="btn" href="https://calendly.com/your-calendly/intro" target="_blank" rel="noopener">See a Sample Dashboard</a>
+        <a class="btn secondary" href="#contact">Request Case Studies</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <h2 class="section-title">Simple, fast process</h2>
+      <div class="steps" style="margin-top:12px">
+        <div class="step"><div class="n">1</div><h3>Discovery</h3><p class="muted">15‑minute call to align on goals, service area, and budget.</p></div>
+        <div class="step"><div class="n">2</div><h3>Blueprint</h3><p class="muted">Targeting, offers, and automation map tailored to your crew.</p></div>
+        <div class="step"><div class="n">3</div><h3>Launch</h3><p class="muted">Ads + SEO go live, lead capture & follow‑ups switched on.</p></div>
+        <div class="step"><div class="n">4</div><h3>Optimize</h3><p class="muted">Weekly tuning with clear reporting on what’s working.</p></div>
+      </div>
+      <div class="cta-band" style="margin-top:18px">
+        <div>
+          <strong>Free AI Marketing Audit</strong>
+          <div class="muted">We’ll review your Google profile, website, and ads for quick wins.</div>
+        </div>
+        <a class="btn" href="#contact">Get the Audit</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="muted">Prefer email? <a href="mailto:hello@greatsurf.io">hello@greatsurf.io</a>. Or book directly via Calendly.
+      </p>
+      <form id="contact-form" class="card" style="margin-top:12px;max-width:720px" action="https://formspree.io/f/your-id" method="POST">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div>
+            <label for="name" style="display:block;font-weight:600">Name</label>
+            <input id="name" name="name" required placeholder="Jane Doe" style="width:100%;padding:12px;border:1px solid #d0d5dd;border-radius:10px" />
+          </div>
+          <div>
+            <label for="email" style="display:block;font-weight:600">Email</label>
+            <input id="email" name="email" type="email" required placeholder="jane@company.com" style="width:100%;padding:12px;border:1px solid #d0d5dd;border-radius:10px" />
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <label for="message" style="display:block;font-weight:600">How can we help?</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals in Newport Beach / Newport Coast…" style="width:100%;padding:12px;border:1px solid #d0d5dd;border-radius:10px"></textarea>
+        </div>
+        <input type="hidden" name="source" value="greatsurf.io" />
+        <button class="btn" type="submit" style="margin-top:12px">Send</button>
+        <p class="muted" style="margin-top:8px;font-size:12px">Tip: If deploying on Netlify, you can replace the action with Netlify Forms (add <code>data-netlify="true"</code>).</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div>
+        <strong>GreatSurf.io</strong>
+        <div class="muted">Newport Beach, California</div>
+      </div>
+      <div class="muted">© <span id="y"></span> GreatSurf.io • Built with AI + a lot of coffee ☕️</div>
+    </div>
+  </footer>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
-    (function(){
-      const btn = document.getElementById('theme-toggle');
-      const icon = btn.querySelector('i');
-      const key = 'gs-theme';
-      const saved = localStorage.getItem(key);
-      if(saved === 'dark'){ document.body.classList.add('dark'); icon.classList.replace('fa-sun','fa-moon'); }
-      btn && btn.addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-        const darkMode = document.body.classList.contains('dark');
-        localStorage.setItem(key, darkMode ? 'dark' : 'light');
-        icon.classList.toggle('fa-sun', !darkMode);
-        icon.classList.toggle('fa-moon', darkMode);
-      });
-    })();
   </script>
 </body>
 </html>
